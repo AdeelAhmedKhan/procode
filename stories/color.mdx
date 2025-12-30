@@ -1,0 +1,57 @@
+import { Meta, ColorPalette, ColorItem } from '@storybook/addon-docs/blocks';
+
+<Meta title="Colors" />
+
+<ColorPalette>
+  <ColorItem
+    title="theme.color.greyscale"
+    subtitle="Some of the greys"
+    colors={{ White: '#FFFFFF', Dark: '#202020' }}
+  />
+  <ColorItem 
+    title="theme.color.primary" 
+    subtitle="Primary" 
+    colors={{ '': '#001C6B' }} 
+  />
+  <ColorItem 
+    title="theme.color.primarylight" 
+    subtitle="Primary Light" 
+    colors={{ '': '#1F0ED4' }} 
+  />
+  <ColorItem 
+    title="theme.color.cta" 
+    subtitle="CTA" 
+    colors={{ '': '#7A32FF' }} 
+  />
+  <ColorItem 
+    title="theme.color.secondary" 
+    subtitle="Secondary" 
+    colors={{ DodgerBlue: '#71F9F0' }} 
+  />
+  <ColorItem 
+    title="theme.color.highlight" 
+    subtitle="Highlight" 
+    colors={{ DodgerBlue: '#BBFF73' }} 
+  />
+  <ColorItem
+    title="theme.color.categories"
+    subtitle="Some of the colors for categories"
+    colors={{
+      LightGreen: '#C9FBC0',
+      LightYellow: '#FFF2C9',
+      LightPurple: '#D3DBFF',
+    }}
+  />
+  <ColorItem
+    title="gradient"
+    subtitle="darkGradiant"
+    colors={{
+      Gradient: 'linear-gradient(to right,#202020,black)',
+    }}
+  />
+  <ColorItem
+    title="gradient"
+    subtitle="Grayscale"
+    colors={['linear-gradient(65deg,white,black)']}
+  />
+</ColorPalette>
