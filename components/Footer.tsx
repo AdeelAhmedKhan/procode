@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="space-y-4">
          {/* Logo */}
         <Link href="/" className="text-2xl font-extrabold tracking-wide text-primary">
-         <Image src="/logo-white.png" alt="Logo" width={150} height={150} />
+         <Image src="logo-white.png" alt="Logo" width={150} height={150} />
         </Link>
           <p className="text-sm mt-15 font-light">Need help? Reach us at: <a href="mailto:info@procode.com" className="underline">info@procode.com</a></p>
           <div className="flex space-x-4 mt-7">
@@ -51,12 +51,12 @@ const Footer = () => {
           <h3 className="text-xl">From the blog</h3>
           <ul className="space-y-2 text-sm font-light">
             <li className="flex items-center gap-2">
-              <Image src="/blogs/images/rpa.png" alt="Blog 1" width={40} height={40} className="rounded-sm" />
-              <Link href="/blog/what-is-rpa">What is Robotic Process Automation (RPA)?</Link>
+              <Image src="blogs/images/rpa.png" alt="Blog 1" width={40} height={40} className="rounded-sm" />
+              <Link href="blog/what-is-rpa">What is Robotic Process Automation (RPA)?</Link>
             </li>
             <li className="flex items-center gap-2">
-              <Image src="/blogs/images/automation.png" alt="Blog 2" width={40} height={40} className="rounded-sm" />
-              <Link href="/blog/types-of-automation">Types of Automation</Link>
+              <Image src="blogs/images/automation.png" alt="Blog 2" width={40} height={40} className="rounded-sm" />
+              <Link href="blog/types-of-automation">Types of Automation</Link>
             </li>
           </ul>
         </div>
