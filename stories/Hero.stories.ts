@@ -14,7 +14,7 @@ primaryCtaText:'Book a Free Discovery Call',
 primaryCtaLink:'#',
 secondaryCtaText:'See Case Studies',
 secondaryCtaLink:'#',
-bgImageUrl:'/bg-particle.png',
+bgImage:'/bg-particle.png',
   alignment: 'center' as const,
 }
 

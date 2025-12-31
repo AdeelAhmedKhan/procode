@@ -7,6 +7,7 @@ const nextConfig: NextConfig = {
     turbopackFileSystemCacheForDev: true,
   },
    output: 'export', // Enables static export
+  basePath: '/procode', // Required for subdirectory hosting
 
   images: {
     unoptimized: true, // Required as Next.js Image Optimization needs a server
