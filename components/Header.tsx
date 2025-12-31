@@ -9,7 +9,7 @@ export default function Header() {
       <div className="container mx-auto flex h-20 items-center justify-between px-4">
         {/* Logo */}
         <Link href="/" className="text-2xl font-extrabold tracking-wide text-primary">
-         <Image src="/logo.png" alt="Logo" width={100} height={100} />
+         <Image src="logo.png" alt="Logo" width={100} height={100} />
            </Link>
 
         {/* Navigation */}

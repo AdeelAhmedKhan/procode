@@ -28,7 +28,7 @@ export default function HomePage() {
         {/* Top Separator Image */}
         <div className="mb-8 flex justify-center">
           <Image
-            src="/seperator.png" // replace with your separator image
+            src="seperator.png" // replace with your separator image
             alt="Section Separator"
             width={900}
             height={100}
