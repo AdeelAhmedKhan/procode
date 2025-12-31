@@ -5,6 +5,7 @@ import CTASection from "@/components/sections/CTASection";
 import Header from "@/components/Header";
 import SuccessStories from "@/components/sections/SuccessStories";
 import Image from "next/image";
+import Footer from "@/components/Footer";
 
 export default function HomePage() {
   return (
@@ -53,6 +54,8 @@ export default function HomePage() {
      <WhyChooseUs/>
      <SuccessStories/>
      <CTASection/>
+     <Footer/>
     </main>
+
   );
 }
