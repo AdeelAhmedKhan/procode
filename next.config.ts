@@ -1,6 +1,5 @@
 import type { NextConfig } from "next";
 
-const isProd = process.env.NODE_ENV === "production";
 
 const nextConfig: NextConfig = {
   reactCompiler:true,
@@ -8,8 +7,6 @@ const nextConfig: NextConfig = {
     turbopackFileSystemCacheForDev: true,
   },
    output: 'export', // Enables static export
-  basePath: isProd ? '/procode' : '', // Required for subdirectory hosting
-  assetPrefix: isProd ? '/procode' : '/',
 
   images: {
     unoptimized: true, // Required as Next.js Image Optimization needs a server
