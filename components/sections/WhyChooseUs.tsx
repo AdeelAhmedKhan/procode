@@ -12,7 +12,7 @@ export default function WhyChooseUs() {
           Why Choose Us?
         </h2>
 
-        <p className="mx-auto mt-4 max-w-3xl text-muted-foreground">
+        <p className="mx-auto mt-4 max-w-3xl text-primary">
           With a track record of delivering exceptional automation and AI
           solutions, ProCode is committed to providing value to businesses
           worldwide. We serve clients across GCC, US, and UK markets, ensuring
@@ -41,7 +41,7 @@ export default function WhyChooseUs() {
 
         {/* CTA */}
         <div className="mt-14 text-center">
-          <p className="text-sm text-muted-foreground">
+          <p className="text-sm text-primary">
             Schedule a free consultation to learn more about how we can help
             your business evolve.
           </p>

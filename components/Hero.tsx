@@ -35,7 +35,7 @@ export default function Hero(
  
 
   <div className={`relative container mx-auto px-4 py-32 text-${alignment}`}>
-    <h1 className="text-4xl md:text-6xl  leading-[1] ">
+    <h1 className="text-4xl md:text-6xl  leading-none">
       {title}.
       {
         subtitle && (

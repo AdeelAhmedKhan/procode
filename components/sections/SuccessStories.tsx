@@ -12,14 +12,14 @@ export default function SuccessStories() {
               Success Stories
             </h2>
 
-            <p className="mt-6 text-muted-foreground leading-relaxed">
+            <p className="mt-6 text-primary leading-relaxed">
               Our clients have seen remarkable improvements through RPA and AI
               implementation. By automating labor-intensive processes, they’ve
               reduced costs, increased operational efficiency, and empowered
               their teams to focus on innovation.
             </p>
 
-            <p className="mt-4 font-semibold text-foreground">
+            <p className="mt-4 font-semibold text-primary">
               Read Our Success Stories to see how we&apos;ve made an impact.
             </p>
 

@@ -38,7 +38,7 @@ export default function ServicesSection() {
           <span>with RPA & AI</span>
         </h2>
 
-        <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
+        <p className="mx-auto mt-4 max-w-2xl text-primary">
           At ProCode, we offer tailored Robotic Process Automation (RPA) and
           Artificial Intelligence (AI) solutions to help your business stay
           competitive. Our goal is to simplify complex processes, allowing your

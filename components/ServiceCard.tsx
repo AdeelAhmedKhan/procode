@@ -28,7 +28,7 @@ function ServiceCard(
                   {item.title}
                 </h3>
 
-                <p className="mt-2 text-sm text-muted-foreground">
+                <p className="mt-2 text-sm text-primary">
                   {item.description}
                 </p>
 

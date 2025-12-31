@@ -18,7 +18,7 @@ export default function Header() {
             <Link
               key={item}
               href="#"
-              className="text-sm font-medium text-muted-foreground hover:text-primary transition"
+              className="text-sm font-medium text-primary hover:text-primary/70 transition"
             >
               {item}
             </Link>
