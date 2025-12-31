@@ -7,7 +7,7 @@ export default function CTASection() {
     
 
       {/* Content */}
-      <div className="bg-secondary py-10">
+      <div className="bg-cta py-10">
           {/* Background Image (half visible) */}
       <div className="pointer-events-none absolute left-1/2 top-0 w-full -translate-x-1/2 -translate-y-1 ">
         <Image
@@ -33,7 +33,7 @@ export default function CTASection() {
           <Button
             size="lg"
             variant="secondary"
-            className="rounded-full bg-white px-8 text-secondary hover:bg-white/90"
+            className="px-8"
           >
             Book a Free Discovery Call
           </Button>

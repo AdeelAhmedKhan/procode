@@ -17,7 +17,7 @@ function ServiceCard(
               key={item.title}
               className="border border-border shadow-sm hover:shadow-md transition"
             >
-              <CardContent className="flex flex-col items-center p-8 text-center">
+              <CardContent className="flex flex-col items-center justify-between p-8 text-center">
                 <div
                   className={`mb-4 flex h-14 w-14 items-center justify-center rounded-xl ${item.accent}`}
                 >
@@ -33,9 +33,9 @@ function ServiceCard(
                 </p>
 
                 <Button
-                  variant="secondary"
+                  variant="default"
                   size="sm"
-                  className="mt-6 rounded-full"
+                  className="mt-6"
                 >
                   Learn More
                 </Button>

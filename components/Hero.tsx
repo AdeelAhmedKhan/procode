@@ -32,11 +32,10 @@ export default function Hero(
   className="relative overflow-hidden bg-cover bg-center bg-no-repeat"
   style={{ backgroundImage: `url(${bgImageUrl})` }}
 >
-  {/* Optional overlay for readability */}
-  {/* <div className="absolute inset-0 bg-white/70 dark:bg-background/80" /> */}
+ 
 
   <div className={`relative container mx-auto px-4 py-32 text-${alignment}`}>
-    <h1 className="text-4xl md:text-6xl  tracking-tight">
+    <h1 className="text-4xl md:text-6xl  leading-[1] ">
       {title}.
       {
         subtitle && (
@@ -79,13 +78,13 @@ export default function Hero(
     }
 
     <div className={`mt-10 flex flex-col sm:flex-row items-center ${alignment==='center' ? 'justify-center' : ''} gap-4`}>
-      <Button size="lg" className="rounded-full px-8" >
+      <Button size="lg" className=" px-8" >
        {primaryCtaText}
       </Button>
 
       {/* Optional secondary CTA */}
       {secondaryCtaText && (
-        <Button size="lg" variant="outline" className="rounded-full px-8">
+        <Button size="lg" variant="secondary" className="px-8">
           {secondaryCtaText}
         </Button>
       )}

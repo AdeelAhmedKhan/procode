@@ -32,7 +32,7 @@ export default function ServicesSection() {
     <section className="py-10">
       <div className="container mx-auto px-4 text-center">
         {/* Heading */}
-        <h2 className="text-3xl md:text-4xl  tracking-tight text-primary">
+        <h2 className="text-3xl md:text-5xl text-primary">
           Transform Your Business
           <br />
           <span>with RPA & AI</span>
@@ -47,14 +47,14 @@ export default function ServicesSection() {
 
         {/* CTA */}
         <div className="mt-8">
-          <Button className="rounded-full px-8">
+          <Button className="px-8">
             Book a Free Discovery Call
           </Button>
         </div>
 
         {/* Badge */}
         <div className="mt-6 flex justify-center">
-          <Badge className="rounded-full bg-lime-100 text-lime-700">
+          <Badge className="rounded-full bg-highlight text-primary">
             Services
           </Badge>
         </div>

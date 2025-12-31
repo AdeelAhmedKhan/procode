@@ -26,7 +26,7 @@ export default function Header() {
         </nav>
 
         {/* CTA */}
-        <Button className="rounded-full px-6">
+        <Button className="px-6">
           Book a Free Discovery Call
         </Button>
       </div>
