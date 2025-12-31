@@ -11,7 +11,7 @@ export default function CTASection() {
           {/* Background Image (half visible) */}
       <div className="pointer-events-none absolute left-1/2 top-0 w-full -translate-x-1/2 -translate-y-1 ">
         <Image
-          src="/home/cta-bg.png" // use a soft abstract image or pattern
+          src="home/cta-bg.png" // use a soft abstract image or pattern
           alt="Background Pattern"
           width={700}
           height={700}

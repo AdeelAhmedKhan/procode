@@ -34,7 +34,7 @@ export default function SuccessStories() {
           <div className="relative">
             <div className="overflow-hidden rounded-2xl shadow-lg">
               <Image
-                src="/home/success-stories.png" // replace with your image
+                src="home/success-stories.png" // replace with your image
                 alt="Success Stories"
                 width={600}
                 height={420}

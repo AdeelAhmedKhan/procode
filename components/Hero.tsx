@@ -25,13 +25,11 @@ export default function Hero(
    primaryCtaLink='#',
    secondaryCtaText='See Case Studies',
    secondaryCtaLink='#',
-   bgImage='/bg-particle.png',
+   bgImage='bg-particle.png',
    alignment='center' }: Props
 ) {
-  const pathname = usePathname();
-  const basePath = pathname.startsWith("/procode") ? "/procode" : "";
 
-  const bgImageUrl = `${basePath}${bgImage}`;
+  const bgImageUrl = `${bgImage}`;
   return (
     <>
 <section
