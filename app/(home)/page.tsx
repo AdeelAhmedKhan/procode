@@ -20,7 +20,7 @@ export default function HomePage() {
         primaryCtaLink='#'
         secondaryCtaText='See Case Studies'
         secondaryCtaLink='#'
-        bgImage='/bg-particle.png'
+        bgImageUrl='bg-particle.png'
         alignment= 'center'
      />
      <section className="py-10">

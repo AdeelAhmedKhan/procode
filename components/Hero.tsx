@@ -1,7 +1,5 @@
-'use client'
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
-import { usePathname } from "next/navigation";
 
 interface Props {
   type:'home'|'about'|'services'|'contact'|'blog'|'success-stories',
@@ -12,7 +10,7 @@ interface Props {
   primaryCtaLink: string,
   secondaryCtaText?: string,
   secondaryCtaLink?: string,
-  bgImage: string,
+  bgImageUrl: string,
   alignment: 'center' | 'left'
 }
 export default function Hero(
@@ -25,11 +23,10 @@ export default function Hero(
    primaryCtaLink='#',
    secondaryCtaText='See Case Studies',
    secondaryCtaLink='#',
-   bgImage='bg-particle.png',
+   bgImageUrl='bg-particle.png',
    alignment='center' }: Props
 ) {
-
-  const bgImageUrl = `${bgImage}`;
+  
   return (
     <>
 <section
