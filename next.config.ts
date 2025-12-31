@@ -9,6 +9,8 @@ const nextConfig: NextConfig = {
   },
    output: 'export', // Enables static export
   basePath: isProd ? '/procode' : '', // Required for subdirectory hosting
+  assetPrefix: isProd ? '/procode' : '/',
+
   images: {
     unoptimized: true, // Required as Next.js Image Optimization needs a server
   },
