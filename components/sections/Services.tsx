@@ -30,7 +30,7 @@ const services = [
 export default function ServicesSection() {
   return (
     <section className="py-10">
-      <div className="container mx-auto px-4 text-center">
+      <div className="max-w-5xl mx-auto px-4 text-center">
         {/* Heading */}
         <h2 className="text-3xl md:text-5xl text-primary">
           Transform Your Business

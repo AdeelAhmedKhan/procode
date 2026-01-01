@@ -3,59 +3,104 @@ import ServicesSection from "@/components/sections/Services";
 import WhyChooseUs from "@/components/sections/WhyChooseUs";
 import CTASection from "@/components/sections/CTASection";
 import Header from "@/components/Header";
-import SuccessStories from "@/components/sections/SuccessStories";
+import SuccessStories from "@/components/ContentImageSection";
 import Image from "next/image";
 import Footer from "@/components/Footer";
+import { Award, Puzzle } from "lucide-react";
+import ContentImageSection from "@/components/ContentImageSection";
 
 export default function HomePage() {
+  const whyChooseUsCards=[
+    {
+      title: "Proven Expertise",
+      description: "With years of experience in RPA and AI, we ensure your business stays ahead of the curve.",
+      icon: Award,
+    },
+    {
+      title: "Tailored Solutions",
+      description: "We don't believe in one-size-fits-all. Our solutions are crafted to meet the specific needs of your business.",
+      icon: Puzzle,
+    },
+  ] 
+
   return (
     <main className="relative w-full">
-     <Header/>
-     <Hero 
-     type="home"
-      title='Automate Smarter'
-      subtitle='Grow Faster'
-      description='Unlock the full potential of your business with ProCode’s RPA and AI solutions.'
-        primaryCtaText='Book a Free Discovery Call'
-        primaryCtaLink='#'
-        secondaryCtaText='See Case Studies'
-        secondaryCtaLink='#'
-        bgImageUrl='bg-particle.png'
-        alignment= 'center'
-     />
-     <section className="py-10">
-      <div className="container mx-auto px-4 text-center">
-        {/* Top Separator Image */}
-        <div className="mb-8 flex justify-center">
-          <Image
-            src="seperator.png" // replace with your separator image
-            alt="Section Separator"
-            width={900}
-            height={100}
-            className="object-contain"
-          />
-        </div>
+      <Header />
 
-        {/* Text */}
-        <p className="mx-auto max-w-3xl text-base md:text-lg leading-relaxed text-primary">
-          Our automation expertise enables businesses like yours to streamline
-          operations, enhance productivity, and drive significant cost savings.
-          Whether you&apos;re looking to automate tedious workflows or harness the
-          power of AI, we provide solutions that deliver measurable results.
-        </p>
+      {/* Main Hero */}
+      <Hero
+        type="home"
+        title="Automate Smarter"
+        subtitle="Grow Faster"
+        description="Unlock the full potential of your business with ProCode’s RPA and AI solutions."
+        primaryCtaText="Book a Free Discovery Call"
+        primaryCtaLink="#"
+        secondaryCtaText="See Case Studies"
+        secondaryCtaLink="#"
+        bgImageUrl="bg-particle.png"
+        alignment="center"
+      />
 
-        {/* Bottom Separator */}
-        <div className="mt-12 flex justify-center">
-          <div className="h-px w-4xl bg-muted" />
+      {/* Intro */}
+      <section className="py-10">
+        <div className="container mx-auto px-4 text-center">
+          {/* Top Separator Image */}
+          <div className="mb-8 flex justify-center">
+            <Image
+              src="seperator.png" // replace with your separator image
+              alt="Section Separator"
+              width={900}
+              height={100}
+              className="object-contain"
+            />
+          </div>
+
+          <p className="text-primary mx-auto max-w-3xl text-base leading-relaxed md:text-lg">
+            Our automation expertise enables businesses like yours to streamline operations, enhance
+            productivity, and drive significant cost savings. Whether you&apos;re looking to
+            automate tedious workflows or harness the power of AI, we provide solutions that deliver
+            measurable results.
+          </p>
+
+          {/* Bottom Separator */}
+          <hr className="bg-muted mx-auto mt-12 w-4xl" />
         </div>
-      </div>
-    </section>
-     <ServicesSection/>
-     <WhyChooseUs/>
-     <SuccessStories/>
-     <CTASection/>
-     <Footer/>
+      </section>
+
+      {/* Services */}
+      <section className="py-10">
+        <ServicesSection />
+      </section>
+
+      {/* Why Choose Us */}
+      <section className="py-10">
+        <WhyChooseUs
+          description="With a track record of delivering exceptional automation and AI solutions, ProCode is
+          committed to providing value to businesses worldwide. We serve clients across GCC, US, and
+          UK markets, ensuring each solution is designed to address unique business challenges."
+          data={whyChooseUsCards}
+        />
+      </section>
+
+      {/* Success Stories */}
+      <section className="py-10">
+        <ContentImageSection
+          title="Success Stories"
+          description="Our clients have seen remarkable improvements through RPA and AI implementation. By automating labor-intensive processes, they’ve reduced costs, increased operational efficiency, and empowered their teams to focus on innovation."
+          highlightText="Read Our Success Stories to see how we've made an impact."
+          imageSrc="home/success-stories.png"
+          imageAlt="Success Stories"
+          ctaText="Read More"
+        />
+      </section>
+
+      {/* CTA */}
+      <section className="pt-10">
+        <CTASection />
+      </section>
+
+      {/* Footer */}
+      <Footer />
     </main>
-
   );
 }
