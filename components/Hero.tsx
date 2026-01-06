@@ -37,7 +37,7 @@ export default function Hero(
         <div
           className={`relative mx-auto max-w-5xl items-start px-4 pt-24 pb-50 text-${alignment}`}
         >
-          <h1 className="text-4xl leading-none md:text-6xl">
+          <h1 className="text-4xl leading-none md:text-6xl text-primary">
             {title}.
             {subtitle &&
               (type === 'home' ? (
