@@ -1,7 +1,7 @@
 import Hero from "@/components/Hero";
 import ServicesSection from "@/components/sections/Services";
 import WhyChooseUs from "@/components/sections/WhyChooseUs";
-import CTASection from "@/components/sections/CtaSection";
+import CtaSection from "@/components/sections/CtaSection";
 import Header from "@/components/Header";
 import SuccessStories from "@/components/ContentImageSection";
 import Image from "next/image";
@@ -96,7 +96,7 @@ export default function HomePage() {
 
       {/* CTA */}
       <section className="pt-10">
-        <CTASection />
+        <CtaSection />
       </section>
 
       {/* Footer */}

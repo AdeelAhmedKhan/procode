@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Button } from "../ui/button";
 
-export default function ContactCTASection() {
+export default function ContactCtaSection() {
   return (
     <section className="relative overflow-hidden py-20 max-w-5xl mx-auto">
       <div className="relative mx-auto max-w-7xl px-6">

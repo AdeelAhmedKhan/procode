@@ -1,7 +1,7 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 
-export default function CTASection() {
+export default function CtaSection() {
   return (
     <section className="relative overflow-hidden  pt-24 text-white ">
     

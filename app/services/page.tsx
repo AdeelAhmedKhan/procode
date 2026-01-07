@@ -4,16 +4,9 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import {
   Atom,
-  Award,
   Bot,
-  ChartNoAxesCombinedIcon,
-  Globe,
-  LucideGitBranchPlus,
-  Puzzle,
   ScanQrCode,
 } from 'lucide-react';
-import ContentImageSection from '@/components/ContentImageSection';
-import LetsTalkSection from '@/components/sections/LetsTalkSection';
 import { Button } from '@/components/ui/button';
 
 export default function AboutPage() {
