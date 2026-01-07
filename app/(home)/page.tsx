@@ -3,7 +3,6 @@ import ServicesSection from "@/components/sections/Services";
 import WhyChooseUs from "@/components/sections/WhyChooseUs";
 import CtaSection from "@/components/sections/CtaSection";
 import Header from "@/components/Header";
-import SuccessStories from "@/components/ContentImageSection";
 import Image from "next/image";
 import Footer from "@/components/Footer";
 import { Award, Puzzle } from "lucide-react";
