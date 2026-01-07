@@ -1,10 +1,6 @@
 import Hero from '@/components/Hero';
 import ServiceSection from '@/components/ServiceSection';
-import WhyChooseUs from '@/components/sections/WhyChooseUs';
-import CTASection from '@/components/sections/CtaSection';
 import Header from '@/components/Header';
-import SuccessStories from '@/components/ContentImageSection';
-import Image from 'next/image';
 import Footer from '@/components/Footer';
 import {
   Atom,
