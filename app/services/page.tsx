@@ -150,8 +150,8 @@ export default function AboutPage() {
       <Hero
         type="services"
         title="Our Services"
-        subtitle=""
-        description="Driving Business Transformation through RPA & AI"
+        subtitle="Driving Business Transformation through RPA & AI"
+        description=""
         primaryCtaText="See Our Services"
         primaryCtaLink="#"
         secondaryCtaText=""
