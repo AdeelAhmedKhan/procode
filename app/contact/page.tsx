@@ -23,9 +23,8 @@ export default function ContactPage() {
 
       <hr className="bg-muted mx-auto mt-25 mb-10 w-5xl" />
 
-  <ContactForm />
-  <ResourceSection/>
-
+      <ContactForm />
+      <ResourceSection />
 
       <Footer />
     </main>

@@ -1,33 +1,31 @@
-import { Button } from "@/components/ui/button"
-import Image from "next/image"
-import Markdown from "./ui/markdown"
+import { Button } from '@/components/ui/button';
+import Image from 'next/image';
+import Markdown from './ui/markdown';
 
 interface Props {
-  type:'home'|'about'|'services'|'contact'|'blog'|'success-stories',
-  title: string,
-  subtitle?: string,
-  description: string,
-  primaryCtaText: string,
-  primaryCtaLink: string,
-  secondaryCtaText?: string,
-  secondaryCtaLink?: string,
-  bgImageUrl: string,
-  alignment: 'center' | 'left'
+  type: 'home' | 'about' | 'services' | 'contact' | 'blog' | 'success-stories';
+  title: string;
+  subtitle?: string;
+  description: string;
+  primaryCtaText: string;
+  primaryCtaLink: string;
+  secondaryCtaText?: string;
+  secondaryCtaLink?: string;
+  bgImageUrl: string;
+  alignment: 'center' | 'left';
 }
-export default function Hero(
-  { 
-    type='home',
-    title='Automate Smarter',
-   subtitle='Grow Faster',
-   description='Unlock the full potential of your business with ProCode’s RPA and AI solutions.',
-   primaryCtaText='Book a Free Discovery Call',
-   primaryCtaLink='#',
-   secondaryCtaText='See Case Studies',
-   secondaryCtaLink='#',
-   bgImageUrl='bg-particle.png',
-   alignment='center' }: Props
-) {
-  
+export default function Hero({
+  type = 'home',
+  title = 'Automate Smarter',
+  subtitle = 'Grow Faster',
+  description = 'Unlock the full potential of your business with ProCode’s RPA and AI solutions.',
+  primaryCtaText = 'Book a Free Discovery Call',
+  primaryCtaLink = '#',
+  secondaryCtaText = 'See Case Studies',
+  secondaryCtaLink = '#',
+  bgImageUrl = 'bg-particle.png',
+  alignment = 'center',
+}: Props) {
   return (
     <>
       <section
@@ -37,7 +35,7 @@ export default function Hero(
         <div
           className={`relative mx-auto max-w-5xl items-start px-4 pt-24 pb-50 text-${alignment}`}
         >
-          <h1 className="text-4xl leading-none md:text-6xl text-primary">
+          <h1 className="text-primary text-4xl leading-none md:text-6xl">
             {title}.
             {subtitle &&
               (type === 'home' ? (
@@ -52,7 +50,7 @@ export default function Hero(
                   <p
                     className={`${alignment === 'center' ? 'mx-auto max-w-md' : ''} text-primary mt-3 text-2xl leading-relaxed tracking-normal`}
                   >
-                    {subtitle}
+                    <Markdown md={subtitle} />
                   </p>
                 </>
               ))}
