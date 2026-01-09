@@ -7,7 +7,7 @@ type Props = {
   title: string;
   description?: string;
   alignment?: 'center' | 'left';
-  children: React.ReactNode;
+  children?: React.ReactNode;
 };
 export default function ResourceSection({
   tagline,
