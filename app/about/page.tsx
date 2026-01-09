@@ -5,6 +5,7 @@ import Footer from '@/components/Footer';
 import ContentImageSection from '@/components/ContentImageSection';
 import LetsTalkSection from '@/components/sections/LetsTalkSection';
 import { whyChooseUsCards } from '@/data/whyChooseUs';
+import { Separator } from '@/components/ui/separator';
 
 export default function AboutPage() {
   return (
@@ -35,12 +36,12 @@ export default function AboutPage() {
             organizations streamline operations, automate mundane tasks, and unlock the full
             potential of their workforce.
           </p>
-          <hr className="bg-muted mx-auto mt-12 w-5xl" />
         </div>
       </section>
 
+      <Separator className=" mt-12" />
       {/* our mission */}
-      <section className="py-10">
+      <section className="mx-auto max-w-5xl py-10">
         <ContentImageSection
           title="Our Mission"
           description="At ProCode, our mission is simple: to help businesses achieve more with less. By leveraging the latest in RPA and AI technology, we enable our clients to automate repetitive processes, free up human resources for more strategic tasks, and save both time and money.<br><br> We believe that automation is not just about reducing manual work; it’s about enhancing business agility and ensuring that companies can thrive in today’s fast-evolving digital landscape."
@@ -51,15 +52,15 @@ export default function AboutPage() {
       </section>
 
       {/* seperator */}
-      <hr className="bg-muted mx-auto my-5 w-5xl" />
+      <Separator className=" mt-15" />
 
       {/* why choose us */}
-      <section className="py-10">
+      <section className="mx-auto max-w-5xl py-10">
         <WhyChooseUs description="" data={whyChooseUsCards} showCta={false} />
       </section>
 
       {/* seperator */}
-      <hr className="bg-muted mx-auto my-5 w-5xl" />
+      <Separator className="mt-15 mb-5" />
 
       {/* vision */}
       <section className="mb-10 space-y-20 py-24">
@@ -81,7 +82,7 @@ export default function AboutPage() {
       </section>
 
       {/* seperator */}
-      <hr className="bg-muted mx-auto w-5xl" />
+      <Separator />
 
       <section className="py-24">
         <LetsTalkSection />

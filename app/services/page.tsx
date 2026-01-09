@@ -5,6 +5,7 @@ import Footer from '@/components/Footer';
 import { Atom, Bot, ScanQrCode } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { aiData, documentProcessingData, robotAutomationData } from '@/data/services';
+import { Separator } from '@/components/ui/separator';
 
 export default function AboutPage() {
   return (
@@ -34,7 +35,7 @@ export default function AboutPage() {
             capabilities, we’re here to help you streamline operations, reduce costs, and achieve
             your strategic goals.
           </p>
-          <hr className="bg-muted mx-auto mt-12 w-5xl" />
+          <Separator className="mt-12" />
         </div>
       </section>
 

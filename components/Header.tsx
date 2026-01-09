@@ -6,7 +6,7 @@ type Props={
   bgColor?: string
   variant?: "white" | "transparent"
 }
-export default function Header({bgColor, variant="white"}: Props) {
+export default function Header({bgColor="bg-transparent", variant="white"}: Props) {
    const navLinks = [
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
@@ -28,7 +28,7 @@ export default function Header({bgColor, variant="white"}: Props) {
             <Link
               key={link.name}
               href={link.href}
-              className={` hover:text-primary/70 text-sm font-medium transition-colors ${variant === 'white' ? 'text-primary' : 'text-white'}`}
+              className={`  text-sm font-medium transition-colors ${variant === 'white' ? 'text-primary hover:text-primary/70' : 'text-white hover:text-white/70'}`}
             >
               {link.name}
             </Link>

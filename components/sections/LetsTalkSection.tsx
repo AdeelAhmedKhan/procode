@@ -25,7 +25,7 @@ export default function LetsTalkSection({
         </p>
 
         {/* CARD */}
-        <div className="relative rounded-2xl bg-white shadow-[0px_4px_30px_rgba(0,28,107,0.1)]">
+        <div className="relative rounded-2xl bg-white shadow-[0px_4px_30px_rgba(0,28,107,0.1)] overflow-x-hidden overflow-y-visible">
           <div className="p-10 md:p-14 md:pr-64">
             {/* CONTENT */}
             <h2 className="text-primary text-3xl font-semibold tracking-tight">{title}</h2>

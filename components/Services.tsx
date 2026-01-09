@@ -33,7 +33,7 @@ export default function Services({
           {description && <p className={`text-primary leading-relaxed`}>{description}</p>}
         </div>
         {/* seperator */}
-        <hr className="bg-primary mx-auto my-5 h-0.5 w-5xl" />
+        <hr className="bg-primary mx-auto my-5 h-0.5 md:w-5xl" />
         {/* Content */}
         <>
           {type === 'multiList' && (

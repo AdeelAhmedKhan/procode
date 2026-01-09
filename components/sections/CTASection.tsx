@@ -9,17 +9,17 @@ type CTASectionProps = {
   ctaLink?: string;
 };
 export default function CTASection({
-  title = 'Unlock Your Business&apos;s Potential',
-  description = 'If you&apos;re ready to boost efficiency, cut operational costs, and harness the power of AI, our team is here to guide you through your automation journey.',
+  title = 'Unlock Your Business\'s Potential',
+  description = 'If you\'re ready to boost efficiency, cut operational costs, and harness the power of AI, our team is here to guide you through your automation journey.',
   ctaText = 'Book a Free Discovery Call',
   ctaLink = '/contact',
 }: CTASectionProps) {
   return (
-    <section className="relative overflow-hidden pt-24 text-white">
+          <section className="relative bg-cta text-white py-20 px-6 mt-50">
+
       {/* Content */}
-      <div className="bg-cta py-10">
         {/* Background Image (half visible) */}
-        <div className="pointer-events-none absolute top-0 left-1/2 w-full -translate-x-1/2 -translate-y-1">
+        <div className="pointer-events-none absolute left-1/2 top-0 w-full -translate-x-1/2 -translate-y-7/12 ">
           <Image
             src="home/cta-bg.png" // use a soft abstract image or pattern
             alt="Background Pattern"
@@ -41,7 +41,6 @@ export default function CTASection({
             </Link>
           </div>
         </div>
-      </div>
     </section>
   );
 }

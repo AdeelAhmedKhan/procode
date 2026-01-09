@@ -9,6 +9,7 @@ import ContentImageSection from "@/components/ContentImageSection";
 import CTASection from "@/components/sections/CTASection";
 import { services } from "@/data/services";
 import { whyChooseUsHomeCards } from "@/data/whyChooseUs";
+import { Separator } from "@/components/ui/separator";
 
 export default function HomePage() {
  
@@ -33,7 +34,7 @@ export default function HomePage() {
 
       {/* Intro */}
       <section className="py-10">
-        <div className="container mx-auto px-4 text-center">
+        <div className="container mx-auto px-4 text-center max-w-4xl">
           {/* Top Separator Image */}
           <div className="mb-8 flex justify-center">
             <Image
@@ -53,7 +54,7 @@ export default function HomePage() {
           </p>
 
           {/* Bottom Separator */}
-          <hr className="bg-muted mx-auto mt-12 w-4xl" />
+          <Separator className="mt-12" />
         </div>
       </section>
 

@@ -31,7 +31,7 @@ export default function ContentImageSection({
 }: ContentImageSectionProps) {
   return (
     <section>
-      <div className="container max-w-5xl mx-auto px-4">
+      <div className="container mx-auto px-4">
         <div
           className={cn(
             "grid items-center gap-12 md:grid-cols-2",
