@@ -1,5 +1,5 @@
 import Hero from "@/components/Hero";
-import ServicesSection from "@/components/sections/Services";
+import ServicesSection from "@/components/sections/ServicesSection";
 import WhyChooseUs from "@/components/sections/WhyChooseUs";
 import Header from "@/components/Header";
 import Image from "next/image";
@@ -7,20 +7,11 @@ import Footer from "@/components/Footer";
 import { Award, Puzzle } from "lucide-react";
 import ContentImageSection from "@/components/ContentImageSection";
 import CTASection from "@/components/sections/CTASection";
+import { services } from "@/data/services";
+import { whyChooseUsHomeCards } from "@/data/whyChooseUs";
 
 export default function HomePage() {
-  const whyChooseUsCards=[
-    {
-      title: "Proven Expertise",
-      description: "With years of experience in RPA and AI, we ensure your business stays ahead of the curve.",
-      icon: Award,
-    },
-    {
-      title: "Tailored Solutions",
-      description: "We don't believe in one-size-fits-all. Our solutions are crafted to meet the specific needs of your business.",
-      icon: Puzzle,
-    },
-  ] 
+ 
 
   return (
     <main className="relative w-full">
@@ -68,7 +59,7 @@ export default function HomePage() {
 
       {/* Services */}
       <section className="py-10">
-        <ServicesSection />
+        <ServicesSection data={services} />
       </section>
 
       {/* Why Choose Us */}
@@ -77,7 +68,7 @@ export default function HomePage() {
           description="With a track record of delivering exceptional automation and AI solutions, ProCode is
           committed to providing value to businesses worldwide. We serve clients across GCC, US, and
           UK markets, ensuring each solution is designed to address unique business challenges."
-          data={whyChooseUsCards}
+          data={whyChooseUsHomeCards}
         />
       </section>
 

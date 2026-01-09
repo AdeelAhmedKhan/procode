@@ -1,138 +1,12 @@
 import Hero from '@/components/Hero';
-import ServiceSection from '@/components/ServiceSection';
+import Services from '@/components/Services';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import {
-  Atom,
-  Bot,
-  ScanQrCode,
-} from 'lucide-react';
+import { Atom, Bot, ScanQrCode } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { aiData, documentProcessingData, robotAutomationData } from '@/data/services';
 
 export default function AboutPage() {
-  type ServiceItem = {
-    title: string;
-    description: string;
-  };
-
-  type ServiceMultiList = {
-    style: 'multiList';
-    content: ServiceItem[];
-    image: string;
-    imageAlt?: string;
-  };
-
-  type ServiceSingleList = {
-    style: 'singleList';
-    title: string;
-    description: string;
-    image: string;
-    imageAlt?: string;
-  };
-  type ServiceIconList = {
-    style: 'iconList';
-    title: string;
-    description: string;
-    image: string;
-    imageAlt?: string;
-  };
-
-  const rpaBenefits: ServiceMultiList[] = [
-    {
-      style: 'multiList',
-      content: [
-        {
-          title: 'Automation of Manual Workflows',
-          description: 'Eliminate repetitive tasks and allow teams to focus on strategic work.',
-        },
-        {
-          title: 'Error Reduction',
-          description: 'Minimize human errors by standardizing automated processes.',
-        },
-        {
-          title: 'Automation of Manual Workflows',
-          description: 'Eliminate repetitive tasks and allow teams to focus on strategic work.',
-        },
-        {
-          title: 'Error Reduction',
-          description: 'Minimize human errors by standardizing automated processes.',
-        },
-      ],
-      image: 'services/rpa/rpa-robot.png',
-      imageAlt: 'RPA Automation Benefits',
-    },
-    {
-      style: 'multiList',
-      content: [
-        {
-          title: 'Scalability',
-          description: 'Easily scale operations without increasing headcount.',
-        },
-        {
-          title: 'Cost Efficiency',
-          description: 'Reduce operational costs while increasing productivity.',
-        },
-        {
-          title: 'Scalability',
-          description: 'Easily scale operations without increasing headcount.',
-        },
-        {
-          title: 'Cost Efficiency',
-          description: 'Reduce operational costs while increasing productivity.',
-        },
-      ],
-      image: 'services/rpa/rpa-robot.png',
-      imageAlt: 'RPA Scalability Benefits',
-    },
-  ];
-  const ai: ServiceSingleList[] = [
-    {
-      style: 'singleList',
-      title: 'Chatbots & Virtual Assistants',
-      description:
-        'Automate customer interactions and provide round-the-clock service through AI-powered chatbots or voice assistants, capable of handling language-based queries in real time.',
-      image: 'services/ai/1.png',
-    },
-    {
-      style: 'singleList',
-      title: 'RAG (Retrieval-Augmented Generation)',
-      description:
-        'Enhance your document retrieval systems with our RAG solutions. AI models fetch relevant data from large datasets and generate responses or summaries based on external sources. This is ideal for industries like legal, healthcare, and finance where quick access to accurate data is critical.',
-      image: 'services/ai/2.png',
-    },
-    {
-      style: 'singleList',
-      title: 'Document Processing with AI',
-      description:
-        "AI can complement RPA by enhancing document handling tasks. While RPA automates structured document processes, AI can interpret and extract unstructured data from scanned PDFs, invoices, contracts, and other complex formats. This allows you to automate more sophisticated document processing tasks that RPA alone can't handle efficiently.",
-      image: 'services/ai/3.png',
-    },
-  ];
-
-  const dp: ServiceIconList[] = [
-    {
-      style: 'iconList',
-      title: 'Tailored Solutions for Your Industry',
-      description:
-        'We design personalized RPA and AI strategies that align with your unique needs, driving maximum impact and efficiency across all areas of your operations.',
-      image: 'services/dp/1.png',
-    },
-    {
-      style: 'iconList',
-      title: 'Innovative AI Capabilities',
-      description:
-        'From document processing to intelligent retrieval systems, our AI solutions help your business leverage data like never before.',
-      image: 'services/dp/2.png',
-    },
-    {
-      style: 'iconList',
-      title: 'Proven Results',
-      description:
-        'Our clients have seen significant cost savings and operational efficiencies with our RPA and AI solutions.',
-      image: 'services/dp/3.png',
-    },
-  ];
-
   return (
     <main className="relative w-full">
       <Header />
@@ -166,36 +40,39 @@ export default function AboutPage() {
 
       {/* our services */}
       <section className="container mx-auto space-y-20 py-10">
-        <ServiceSection
+        <Services
           type="multiList"
           badgeIcon={<Bot />}
           title="Robotic Process Automation (RPA)"
           description="Our RPA solutions automate repetitive tasks, increase operational efficiency, and reduce human errors, allowing your team to focus on high-value activities. We work across industries including manufacturing, supply chain, healthcare, retail, and more."
           tagLine="How RPA benefit your business?"
-          services={rpaBenefits}
+          services={robotAutomationData}
           footNote="RPA is ideal for automating structured and rule-based tasks that can be replicated in digital systems, making your operations more efficient and cost-effective."
           bulletColor="bg-linear-to-b from-[#FFE28D] to-[#FFF2C9]"
+          bgColor="bg-linear-to-b from-[#FFE28D] to-[#FFF2C9]"
         />
 
-        <ServiceSection
+        <Services
           type="singleList"
           badgeIcon={<Atom />}
           title="AI Integration"
           description="Artificial Intelligence is transforming business landscapes, and our AI solutions are built to give you a competitive edge. Whether it’s optimizing workflows or enhancing decision-making, our AI services help you get more out of your existing processes."
           tagLine="Key AI Solutions We Offer"
-          services={ai}
+          services={aiData}
           footNote="The AI landscape is evolving rapidly, and the services we offer evolve with it. If you have other AI-related tasks or projects, don’t hesitate to reach out to us, and we'll explore how we can assist you."
           bulletColor="bg-linear-to-b from-[#C9FBC0] to-[#71F9F0]"
+          bgColor="bg-linear-to-b from-[#C9FBC0] to-[#71F9F0]"
         />
 
-        <ServiceSection
+        <Services
           type="iconList"
           badgeIcon={<ScanQrCode />}
           title="Document Processing & RAG"
           description="Our consulting services help you identify the right RPA and AI solutions tailored to your business challenges. We guide you through the automation process, from initial assessment to successful implementation, ensuring that your investment delivers maximum value."
           tagLine="Why Choose ProCode?"
-          services={dp}
+          services={documentProcessingData}
           bulletColor="bg-linear-to-b from-[#DBC7FF] to-[#EEE5FF]"
+          bgColor="bg-linear-to-b from-[#DBC7FF] to-[#EEE5FF]"
         />
       </section>
 

@@ -1,29 +1,7 @@
-import { Calculator, NotebookPen } from 'lucide-react';
+import { ResourceItem } from '@/lib/types/Resources';
 import Image from 'next/image';
-import {  BiCommentDetail } from 'react-icons/bi';
 
-const resources = [
-  {
-    title: "Success Stories",
-    description: "See how we've helped businesses just like yours automate workflows and achieve greater efficiency.",
-    icon: <BiCommentDetail/>, // Replace with Lucide-react or SVG icons
-    link: "#"
-  },
-  {
-    title: "Blog",
-    description: "Read up on automation trends, AI breakthroughs, and how these technologies are transforming industries.",
-    icon: <NotebookPen/>,
-    link: "#"
-  },
-  {
-    title: "RPA Savings Calculator",
-    description: "Find out how much you could save with our RPA solutions. Use this quick tool to estimate potential cost reductions for your business.",
-    icon: <Calculator/>,
-    link: "#"
-  }
-];
-
-const ResourceSection = () => {
+export default function ResourceSection({data}:{data:ResourceItem[]}) {
   return (
     <section className="relative bg-primary-light text-white py-20 px-6 overflow-hidden ">
            <div className="pointer-events-none absolute left-1/2 top-0 w-full -translate-x-1/2 -translate-y-1/3 ">
@@ -49,7 +27,7 @@ const ResourceSection = () => {
 
         {/* Resource Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {resources.map((item, index) => (
+          {data.map((item, index) => (
             <div 
               key={index} 
               className="bg-white rounded-xl p-8 flex flex-col items-start transition-transform hover:-translate-y-1 duration-300"
@@ -81,4 +59,3 @@ const ResourceSection = () => {
   );
 };
 
-export default ResourceSection;

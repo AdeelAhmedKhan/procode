@@ -1,9 +1,9 @@
-
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ContactCtaSection from '@/components/sections/ContactCtaSection';
 import ContactForm from '@/components/sections/ContactForm';
 import ResourceSection from '@/components/sections/ResourceSection';
+import { resources } from '@/data/resource';
 
 export default function ContactPage() {
   return (
@@ -19,7 +19,7 @@ export default function ContactPage() {
       <hr className="bg-muted mx-auto mt-25 mb-10 w-5xl" />
 
       <ContactForm />
-      <ResourceSection />
+      <ResourceSection data={resources} />
 
       <Footer />
     </main>

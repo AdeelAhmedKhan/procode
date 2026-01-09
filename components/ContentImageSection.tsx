@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import Markdown from "./ui/markdown";
 
-interface ContentImageSectionProps {
+export interface ContentImageSectionProps {
   title: string;
   description: string;
   highlightText?: string;

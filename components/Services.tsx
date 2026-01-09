@@ -1,50 +1,7 @@
+import { ServiceSectionProps } from '@/lib/types/Services';
 import Image from 'next/image';
-import { ReactNode } from 'react';
 
-type ServiceItem = {
-  title: string;
-  description: string;
-};
-
-type ServiceMultiList = {
-  style: 'multiList';
-  content: ServiceItem[];
-  image: string;
-  imageAlt?: string;
-};
-
-type ServiceSingleList = {
-  style: 'singleList';
-  title: string;
-  description: string;
-  image: string;
-  imageAlt?: string;
-};
-
-type ServiceIconList = {
-  style: 'iconList';
-  title: string;
-  description: string;
-  image: string;
-  imageAlt?: string;
-};
-
-type Services = ServiceMultiList | ServiceSingleList | ServiceIconList;
-
-type ServiceSectionProps = {
-  type: 'multiList' | 'singleList' | 'iconList';
-  badgeIcon?: ReactNode;
-  title: string;
-  description?: string;
-  tagLine?: string;
-  services: Services[];
-  footNote?: string;
-
-  /** Styling controls */
-  bulletColor?: string;
-};
-
-export default function ServiceSection({
+export default function Services({
   type,
   badgeIcon,
   title,
@@ -52,12 +9,13 @@ export default function ServiceSection({
   tagLine,
   services,
   footNote,
-  bulletColor = 'bg-yellow-400',
+  bulletColor = 'bg-linear-to-b from-[#FFE28D] to-[#FFF2C9]',
+  bgColor = 'bg-linear-to-b from-[#FFE28D] to-[#FFF2C9]',
 }: ServiceSectionProps) {
   let globalIndex = 0;
 
   return (
-    <section className={`${bulletColor} rounded-2xl p-8 md:p-14`}>
+    <section className={`${bgColor} rounded-2xl p-8 md:p-14`}>
       <div className="mx-auto max-w-5xl">
         {/* Header */}
         <div className="mb-10">
@@ -99,7 +57,7 @@ export default function ServiceSection({
                             return (
                               <li key={globalIndex} className="flex gap-4">
                                 <span
-                                  className={`text-primary flex size-6 items-center justify-center rounded-full p-2.5 text-xs font-semibold ${bulletColor}`}
+                                  className={`text-primary flex size-6 items-center justify-center rounded-full p-2.5 text-xs font-semibold ${blockIndex % 2 === 1 ? 'bg-category-green' : bulletColor}`}
                                 >
                                   {globalIndex}
                                 </span>

@@ -1,33 +1,9 @@
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { Bot, Cpu, FileText } from "lucide-react"
 import ServiceCard from "../ServiceCard"
+import type { Service } from "@/lib/types/Services"
 
-const services = [
-  {
-    title: "RPA Solutions",
-    description:
-      "Automate repetitive tasks to save time and reduce errors.",
-    icon: Bot,
-    accent: "bg-yellow-100 text-yellow-600",
-  },
-  {
-    title: "AI Integration",
-    description:
-      "Leverage advanced AI for smarter decision-making, predictive analytics, and enhanced customer interactions.",
-    icon: Cpu,
-    accent: "bg-green-100 text-green-600",
-  },
-  {
-    title: "Document Processing & RAG",
-    description:
-      "Automate document handling and retrieval with AI, boosting efficiency and accuracy.",
-    icon: FileText,
-    accent: "bg-purple-100 text-purple-600",
-  },
-]
-
-export default function ServicesSection() {
+export default function ServicesSection({data}:{data:Service[]}) {
   return (
     <section className="py-10">
       <div className="max-w-5xl mx-auto px-4 text-center">
@@ -61,7 +37,7 @@ export default function ServicesSection() {
 
         {/* Cards */}
         <div className="mt-14 grid gap-8 md:grid-cols-3">
-          {services.map((service) => (
+          {data.map((service) => (
             <ServiceCard 
             key={service.title}
             item={service} 

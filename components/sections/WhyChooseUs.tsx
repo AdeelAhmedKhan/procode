@@ -1,23 +1,19 @@
-import { Card, CardContent } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { Award, LucideProps, Puzzle } from "lucide-react"
-import FeatureCard from "../FeatureCard"
-import { ForwardRefExoticComponent, RefAttributes } from "react";
+import { Button } from '@/components/ui/button';
+import FeatureCard from '../FeatureCard';
+import React from 'react';
+import Link from 'next/link';
 
 type WhyChooseUsItem = {
   title: string;
   description: string;
-  icon: ForwardRefExoticComponent<
-    Omit<LucideProps, "ref"> & RefAttributes<SVGSVGElement>
-  >;
+  icon: React.ElementType;
 };
 type WhyChooseUsProps = {
   description: string;
   data: WhyChooseUsItem[];
-  showCta?:boolean
+  showCta?: boolean;
 };
-export default function WhyChooseUs({ description, data,showCta=true }: WhyChooseUsProps) {
-
+export default function WhyChooseUs({ description, data, showCta = true }: WhyChooseUsProps) {
   return (
     <section className="py-10">
       <div className="container mx-auto px-4 text-center">
@@ -40,7 +36,9 @@ export default function WhyChooseUs({ description, data,showCta=true }: WhyChoos
               Schedule a free consultation to learn more about how we can help your business evolve.
             </p>
 
-            <Button className="mt-4 rounded-full px-8">Get in Touch</Button>
+            <Link href="/contact">
+              <Button className="mt-4 px-8">Get in Touch</Button>
+            </Link>
           </div>
         )}
       </div>

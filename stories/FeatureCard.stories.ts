@@ -1,8 +1,6 @@
 import FeatureCard from "@/components/FeatureCard";
-import Hero from "@/components/Hero";
-import ServiceCard from "@/components/ServiceCard";
 import type { Meta, StoryObj } from "@storybook/nextjs-vite";
-import { Award, Bot, Cpu, FileText } from "lucide-react"
+import { Award } from "lucide-react"
 
 
 

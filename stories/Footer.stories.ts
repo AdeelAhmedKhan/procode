@@ -1,9 +1,10 @@
-import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import type { Meta, StoryObj } from "@storybook/nextjs-vite";
 
+
 const meta = {
-  title: "Components/Header",
-  component: Header,
+  title: "Components/Footer",
+  component: Footer,
   // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
   tags: ["autodocs"],
   parameters: {
@@ -11,23 +12,14 @@ const meta = {
     layout: "fullscreen",
   },
   args: {
-    variant: "white",
+  
   },
- 
-} satisfies Meta<typeof Header>;
+} satisfies Meta<typeof Footer>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const White: Story = {
-  args: {
-    variant: "white",
-  },
+export const Default: Story = {
+  
 };
 
-export const Transparent: Story = {
-  args: {
-    variant: "transparent",
-    bgColor: "bg-primary",
-  },
-};
