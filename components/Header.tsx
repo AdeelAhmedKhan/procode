@@ -11,7 +11,7 @@ export default function Header({bgColor="bg-transparent", variant="white"}: Prop
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
     { name: "Services", href: "/services" },
-    { name: "Blog", href: "/blog" },
+    { name: "Blog", href: "/blogs" },
     { name: "Success Stories", href: "/success-stories" },
   ];
   return (

@@ -41,7 +41,7 @@ const Footer = () => {
             <li><Link href="/">Home</Link></li>
             <li><Link href="/about">About</Link></li>
             <li><Link href="/services">Services</Link></li>
-            <li><Link href="/blog">Blog</Link></li>
+            <li><Link href="/blogs">Blog</Link></li>
             <li><Link href="/contact">Contact</Link></li>
           </ul>
         </div>
@@ -52,11 +52,11 @@ const Footer = () => {
           <ul className="space-y-2 text-sm font-light">
             <li className="flex items-center gap-2">
               <Image src="blogs/images/rpa.png" alt="Blog 1" width={40} height={40} className="rounded-sm" />
-              <Link href="blog/what-is-rpa">What is Robotic Process Automation (RPA)?</Link>
+              <Link href="blogs/what-is-rpa">What is Robotic Process Automation (RPA)?</Link>
             </li>
             <li className="flex items-center gap-2">
               <Image src="blogs/images/automation.png" alt="Blog 2" width={40} height={40} className="rounded-sm" />
-              <Link href="blog/types-of-automation">Types of Automation</Link>
+              <Link href="blogs/types-of-automation">Types of Automation</Link>
             </li>
           </ul>
         </div>
