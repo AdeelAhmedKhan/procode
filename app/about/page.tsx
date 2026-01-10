@@ -10,6 +10,11 @@ import { Separator } from '@/components/ui/separator';
 export default function AboutPage() {
   return (
     <main className="relative w-full">
+         <div
+        className="relative overflow-hidden bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(about/bg-particle-hero.png)` }}
+      >
+
       <Header />
       <Hero
         type="home"
@@ -20,9 +25,10 @@ export default function AboutPage() {
         primaryCtaLink="#"
         secondaryCtaText=""
         secondaryCtaLink="#"
-        bgImageUrl="bg-particle.png"
+        bgImageUrl=""
         alignment="left"
       />
+      </div>
 
       {/* intro */}
       <section className="py-10">

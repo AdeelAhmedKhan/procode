@@ -18,7 +18,7 @@ export default function ContactPage() {
         <ContactCtaSection />
       </section>
 
-      <Separator className=" mt-25 mb-10" />
+      <Separator className="mt-25 mb-10" />
 
       <ContactForm />
       <ResourceSection
@@ -29,7 +29,6 @@ export default function ContactPage() {
         {/* Resource Cards Grid */}
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
           {resources.map((item, index) => (
-
             <ResourceCard
               key={index}
               title={item.title}
@@ -37,7 +36,6 @@ export default function ContactPage() {
               Icon={item.icon}
               link={item.link}
             />
-       
           ))}
         </div>
       </ResourceSection>

@@ -10,19 +10,24 @@ import { Separator } from '@/components/ui/separator';
 export default function AboutPage() {
   return (
     <main className="relative w-full">
-      <Header />
-      <Hero
-        type="services"
-        title="Our Services"
-        subtitle="Driving Business Transformation through RPA & AI"
-        description=""
-        primaryCtaText="See Our Services"
-        primaryCtaLink="#"
-        secondaryCtaText=""
-        secondaryCtaLink="#"
-        bgImageUrl="bg-particle.png"
-        alignment="left"
-      />
+      <div
+        className="relative overflow-hidden bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(services/bg-particle-hero.png)` }}
+      >
+        <Header />
+        <Hero
+          type="services"
+          title="Our Services"
+          subtitle="Driving Business Transformation through RPA & AI"
+          description=""
+          primaryCtaText="See Our Services"
+          primaryCtaLink="#"
+          secondaryCtaText=""
+          secondaryCtaLink="#"
+          bgImageUrl=""
+          alignment="left"
+        />
+      </div>
 
       {/* intro */}
       <section className="py-10">

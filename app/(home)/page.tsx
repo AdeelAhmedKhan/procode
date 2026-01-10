@@ -1,19 +1,17 @@
-import Hero from "@/components/Hero";
-import ServicesSection from "@/components/sections/ServicesSection";
-import WhyChooseUs from "@/components/sections/WhyChooseUs";
-import Header from "@/components/Header";
-import Image from "next/image";
-import Footer from "@/components/Footer";
-import { Award, Puzzle } from "lucide-react";
-import ContentImageSection from "@/components/ContentImageSection";
-import CTASection from "@/components/sections/CTASection";
-import { services } from "@/data/services";
-import { whyChooseUsHomeCards } from "@/data/whyChooseUs";
-import { Separator } from "@/components/ui/separator";
+import Hero from '@/components/Hero';
+import ServicesSection from '@/components/sections/ServicesSection';
+import WhyChooseUs from '@/components/sections/WhyChooseUs';
+import Header from '@/components/Header';
+import Image from 'next/image';
+import Footer from '@/components/Footer';
+import { Award, Puzzle } from 'lucide-react';
+import ContentImageSection from '@/components/ContentImageSection';
+import CTASection from '@/components/sections/CTASection';
+import { services } from '@/data/services';
+import { whyChooseUsHomeCards } from '@/data/whyChooseUs';
+import { Separator } from '@/components/ui/separator';
 
 export default function HomePage() {
- 
-
   return (
     <main className="relative w-full">
       <Header />
@@ -34,7 +32,7 @@ export default function HomePage() {
 
       {/* Intro */}
       <section className="py-10">
-        <div className="container mx-auto px-4 text-center max-w-4xl">
+        <div className="container mx-auto max-w-4xl px-4 text-center">
           {/* Top Separator Image */}
           <div className="mb-8 flex justify-center">
             <Image
